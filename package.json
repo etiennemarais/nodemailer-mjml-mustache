@@ -1,0 +1,23 @@
+{
+  "name": "nodemailer-mjml-mustache",
+  "version": "0.1.0",
+  "description": "A plugin for nodemailer that uses mjml and mustache view engine to generate emails.",
+  "main": "index.js",
+  "repository": "git@github.com:etiennemarais/nodemailer-mjml-mustache.git",
+  "author": "Etienne Marais <hello@etiennemarais.co.za>",
+  "keywords": [
+    "nodemailer",
+    "html",
+    "mjml",
+    "mustache"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "mjml": "^4.6.3",
+    "mustache": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemailer": "^6.4.10",
+    "nodemailer-html-to-text": "^3.1.0"
+  }
+}

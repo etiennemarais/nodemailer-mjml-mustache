@@ -1,0 +1,95 @@
+<mjml>
+  <mj-head>
+    <mj-preview>Welcome to MJML, Please confirm your email address.</mj-preview>
+    <mj-attributes>
+        <mj-all font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif" color="#fcfcfc" />
+        <mj-class name="heading" font-size="38px" padding="8px 8px 48px" line-height="1.2" />
+        <mj-class name="normal-text" font-size="18px" line-height="1.5" padding-top="0"/>
+        <mj-class name="highlighted-text" font-size="18px" line-height="1.5" padding-top="0"/>
+        <mj-class name="footer-text" color="#fcfcfc" line-height="16px"/>
+        <mj-class name="call-to-action"
+            background-color="#d55745"
+            color="#fcfcfc"
+            border-radius="8px"
+            font-size="18px"
+            font-weight="600"
+            width="280px"
+            inner-padding="16px 24px 16px 24px"/>
+    </mj-attributes>
+    <mj-style>
+    @media all and (max-width: 480px) {
+        .header-image-mobile td {
+      	    width: 100px !important;
+        }
+        .heading-mobile div {
+        	font-size: 24px !important;
+        }
+        .normal-text-mobile div {
+            font-size: 16px !important;
+        }
+        .highlighted-text-mobile div {
+            font-size: 16px !important;
+        }
+        .footer-text-mobile div {
+            font-size: 11px !important;
+        }
+        .call-to-action-mobile {
+            padding: 4px !important;
+        }
+        .call-to-action-mobile a {
+            font-size: 16px !important;
+        }
+    }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#222222" width="600px">
+    <mj-raw><!-- Header --></mj-raw>
+    <mj-section padding-bottom="0px"
+        full-width="full-width"
+        background-color="#222222">
+        <mj-column width="100%">
+            <mj-spacer height="24px"></mj-spacer>
+            <mj-image width="150px"
+                    css-class="header-image-mobile"
+                    alt="mjml.io"
+                    src="https://mjml.io/assets/img/logo-white-small.png" />
+        </mj-column>
+        <mj-raw><!-- Content Section --></mj-raw>
+        <mj-column width="70%">
+            <mj-spacer height="48px"></mj-spacer>
+            <mj-text align="center" mj-class="heading" css-class="heading-mobile">
+                Hello <strong>{{name}}</strong>
+            </mj-text>
+            <mj-text align="center" mj-class="normal-text" css-class="normal-text-mobile">
+                Welcome to the MJML nodemailer and mustache demo. This is an example of an email confirmation template.
+            </mj-text>
+            <mj-spacer height="8px"></mj-spacer>
+            <mj-text align="center" mj-class="normal-text" css-class="normal-text-mobile">
+                Before you get started, please confirm your email address so that we can safely assign your account to your profile.
+            </mj-text>
+            <mj-spacer height="24px"></mj-spacer>
+            <mj-button mj-class="call-to-action" css-class="call-to-action-mobile" href="{{url}}">
+                Confirm my email address
+            </mj-button>
+            <mj-spacer height="48px"></mj-spacer>
+        </mj-column>
+    </mj-section>
+    <mj-raw><!-- Footer --></mj-raw>
+    <mj-section padding-bottom="0px" background-repeat="no-repeat" full-width="full-width" background-color="#282828">
+        <mj-column width="100%">
+            <mj-social font-size="15px" icon-size="30px" mode="horizontal">
+                <mj-social-element alt="Facebook"
+                    href=""
+                    src="https://d2fi4ri5dhpqd1.cloudfront.net/public/resources/social-networks-icon-sets/t-only-logo-white/facebook@2x.png" />
+                <mj-social-element alt="Instagram"
+                    href=""
+                    src="https://d2fi4ri5dhpqd1.cloudfront.net/public/resources/social-networks-icon-sets/t-only-logo-white/instagram@2x.png" />
+            </mj-social>
+            <mj-text padding="8px 24px" align="center" mj-class="footer-text" css-class="footer-text-mobile">
+                Write less, save time and code more efficiently
+            </mj-text>
+            <mj-spacer height="36px"></mj-spacer>
+        </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
