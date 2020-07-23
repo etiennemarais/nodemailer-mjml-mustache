@@ -1,4 +1,6 @@
 # nodemailer-mjml-mustache
+[![npm version](https://badge.fury.io/js/nodemailer-mjml-mustache.svg)](https://badge.fury.io/js/nodemailer-mjml-mustache)
+
 A plugin for nodemailer that uses mjml and mustache view engine to generate emails.
 
 ## Installation
