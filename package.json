@@ -12,7 +12,8 @@
     "mustache",
     "html-templates",
     "email",
-    "templates"
+    "templates",
+    "responsive"
   ],
   "license": "MIT",
   "dependencies": {
